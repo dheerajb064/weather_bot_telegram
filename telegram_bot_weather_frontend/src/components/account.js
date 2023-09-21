@@ -15,7 +15,7 @@ const Account = () => {
 
   useEffect(()=>{
     (async()=>{
-        const res = await fetch("http://localhost:5000/telegram");
+        const res = await fetch("https://weather-backend-rm9z.onrender.com/telegram");
         const data = await res.json();
         setUsers(data);
     })();
@@ -42,11 +42,11 @@ const Account = () => {
          </div>
          <div className="actions">
           <BlockIcon id="blockbtn" className="action" style={{color: user.subscription === 'active' ? 'orange' : 'green'}}onClick={async (e)=>{
-           await fetch(`http://localhost:5000/telegram/block/${user.chatId}`,{method: 'GET'});
+           await fetch(`https://weather-backend-rm9z.onrender.com/telegram/block/${user.chatId}`,{method: 'GET'});
            
           }}/>
           <DeleteIcon id="deletebtn"className="action" onClick={async (e)=>{
-           await fetch(`http://localhost:5000/telegram/delete/${user.chatId}`,{method: 'GET'});
+           await fetch(`https://weather-backend-rm9z.onrender.com/telegram/delete/${user.chatId}`,{method: 'GET'});
            
           }}/>
 

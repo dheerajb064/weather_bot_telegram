@@ -8,7 +8,7 @@ const Settings = () => {
   const [id ,setId] = useState("");
   useEffect(()=>{
   async function getSettings(){
-    const res = await fetch('http://localhost:5000/telegram/bot');
+    const res = await fetch('https://weather-backend-rm9z.onrender.com/telegram/bot');
     const data = await res.json();
     console.log(data);
     setSettings({teleBotApiKey: data.teleBotApiKey , weatherApiKey: data.weatherApiKey});
@@ -30,7 +30,7 @@ const Settings = () => {
           body: JSON.stringify(settings)
         }
         console.log(config.body)
-        const res = await fetch(`http://localhost:5000/telegram/bot/${id}`,config);
+        const res = await fetch(`https://weather-backend-rm9z.onrender.com/telegram/bot/${id}`,config);
         
       }}>Update</button>
       </div>
@@ -44,7 +44,7 @@ const Settings = () => {
           },
           body: JSON.stringify(settings)
         }
-        const res = await fetch(`http://localhost:5000/telegram/bot/${id}`,config);
+        const res = await fetch(`https://weather-backend-rm9z.onrender.com/telegram/bot/${id}`,config);
         
       }}>Update</button>
       </div>  
