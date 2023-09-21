@@ -1,0 +1,123 @@
+#nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+  }
+  
+  a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  #accounts{
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-details{
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  
+  }
+  
+  .user{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    margin: 0.5rem;
+    padding: 1rem;
+    min-width: 60rem;
+    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    color: green
+  }
+  
+  .detail-heading{
+    font-weight: 700;
+    color: black;
+  }
+  
+  
+  #blockbtn:hover{
+  color: orange;
+  
+  }
+  
+  #deletebtn:hover{
+    color: red;
+  }
+  
+  .action{
+  padding: 0.7rem;
+  cursor: pointer;
+  color: black;
+  }
+  .action:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+    
+  }
+  
+  .actions{
+    display: flex;
+    gap: 1rem;
+    
+  }
+  
+  
+  .api{
+    width: 70%;
+    outline: none;
+    border: none;
+    background: none;
+    color: green;
+  }
+  
+  .api-key{
+    background-color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65rem;
+    height: 2rem;
+  }
+  
+  .update-btn{
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: green;
+  }
+  
+  .update-btn:hover{
+   background-color: rgb(1, 72, 1);
+  }
+  
+  #settings{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  }
